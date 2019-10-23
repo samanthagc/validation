@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Log.e("LOKOKOKOKOKO", "${Mail.mail("lala")}")
-        Log.e("GRAUAUAUAUAU", "${Mail.mail("l@h.j")}")
+        Log.e("LOKOKOKOKOKO", "${Mail.validate("lala")}")
+        Log.e("GRAUAUAUAUAU", "${Mail.validate("l@h.j")}")
         Log.e("testeRafael", "${Telephone.commercialPhone("11111")}")
 
 

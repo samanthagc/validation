@@ -3,4 +3,5 @@
     <string name="phone">Phone</string>
     <string name="cell_phone">Cell phone</string>
     <string name="commercial_phone">Commercial Phone</string>
+    <string name="mail">Mail</string>
 </resources>
