@@ -18,6 +18,9 @@ class MainActivityTest {
     fun mask(func: MainActivityRobot.() -> Unit) = MainActivityRobot()
         .apply { func() }
 
+    /**
+     * Cell phone
+     */
     @Test
     fun validCellPhoneTest(){
         mask {
@@ -42,6 +45,9 @@ class MainActivityTest {
         }
     }
 
+    /**
+     * Commercial phone
+     */
     @Test
     fun validCommercialPhoneTest(){
         mask {
@@ -63,6 +69,61 @@ class MainActivityTest {
         mask {
             setTextOnCommercialPhoneField()
             showBlankCommercialPhoneField()
+        }
+    }
+
+    /**
+     * CPF phone
+     */
+    @Test
+    fun validCPFTest(){
+        mask {
+            setCPFValid()
+            showCPFMask()
+        }
+    }
+
+    @Test
+    fun invalidCPFSizeTest(){
+        mask {
+            setOverCPFSize()
+            showCPFMask()
+        }
+    }
+
+    @Test
+    fun wrongTypeInsertOnCPFField(){
+        mask {
+            setTextOnCPFField()
+            showBlankCPFField()
+        }
+    }
+
+
+    /**
+     * CNPJ phone
+     */
+    @Test
+    fun validCNPJTest(){
+        mask {
+            setCNPJValid()
+            showCNPJMask()
+        }
+    }
+
+    @Test
+    fun invalidCNPJSizeTest(){
+        mask {
+            setOverCNPJSize()
+            showCNPJMask()
+        }
+    }
+
+    @Test
+    fun wrongTypeInsertOnCNPJField(){
+        mask {
+            setTextOnCNPJField()
+            showBlankCNPJField()
         }
     }
 }

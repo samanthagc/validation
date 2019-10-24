@@ -64,4 +64,62 @@ class MainActivityRobot {
             .check(ViewAssertions.matches(withText("")))
     }
 
+
+    /**
+     * cpf methods
+     */
+    fun setCPFValid(){
+        onView(ViewMatchers.withId(R.id.edCPF))
+            .perform(ViewActions.typeText("52998224725"))
+    }
+
+    fun setTextOnCPFField(){
+        onView(ViewMatchers.withId(R.id.edCPF))
+            .perform(ViewActions.typeText("Test"))
+    }
+
+    fun setOverCPFSize(){
+        onView(ViewMatchers.withId(R.id.edCPF))
+            .perform(ViewActions.typeText("529982247255"))
+    }
+
+    fun showCPFMask(){
+        onView(ViewMatchers.withId(R.id.edCPF))
+            .check(ViewAssertions.matches(withText("529.982.247-25")))
+    }
+
+    fun showBlankCPFField(){
+        onView(ViewMatchers.withId(R.id.edCPF))
+            .check(ViewAssertions.matches(withText("")))
+    }
+
+
+    /**
+     * cnpj methods
+     */
+    fun setCNPJValid(){
+        onView(ViewMatchers.withId(R.id.edCNPJ))
+            .perform(ViewActions.typeText("14572457000185"))
+    }
+
+    fun setTextOnCNPJField(){
+        onView(ViewMatchers.withId(R.id.edCNPJ))
+            .perform(ViewActions.typeText("Test"))
+    }
+
+    fun setOverCNPJSize(){
+        onView(ViewMatchers.withId(R.id.edCNPJ))
+            .perform(ViewActions.typeText("145724570001855"))
+    }
+
+    fun showCNPJMask(){
+        onView(ViewMatchers.withId(R.id.edCNPJ))
+            .check(ViewAssertions.matches(withText("14.572.457/0001-85")))
+    }
+
+    fun showBlankCNPJField(){
+        onView(ViewMatchers.withId(R.id.edCNPJ))
+            .check(ViewAssertions.matches(withText("")))
+    }
+
 }
