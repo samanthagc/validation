@@ -9,6 +9,8 @@ class Telephone {
 
         fun cellPhone(phone: String): Boolean {
 
+            if(phone == "") return false
+
             this.phone = cleanPhone(phone)
 
             if (this.phone.matches(butNumbers)) return false
@@ -28,6 +30,8 @@ class Telephone {
         }
 
         fun commercialPhone(phone: String): Boolean {
+
+            if(phone == "") return false
 
             this.phone = cleanPhone(phone)
 

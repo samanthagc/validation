@@ -47,4 +47,10 @@ class MailTest {
         Assert.assertEquals(false, Mail.validate(test))
     }
 
+    @Test
+    fun blankMail(){
+        val test = ""
+        Assert.assertEquals(false, Mail.validate(test))
+    }
+
 }

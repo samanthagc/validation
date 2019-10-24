@@ -4,4 +4,6 @@
     <string name="cell_phone">Cell phone</string>
     <string name="commercial_phone">Commercial Phone</string>
     <string name="mail">Mail</string>
+    <string name="cpf">CPF</string>
+    <string name="cnpj">CNPJ</string>
 </resources>

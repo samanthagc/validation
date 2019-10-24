@@ -36,6 +36,12 @@ class TelephoneTest {
     }
 
     @Test
+    fun blankCellPhone(){
+        val phone = ""
+        Assert.assertEquals(false, Telephone.cellPhone(phone))
+    }
+
+    @Test
     fun validCellPhone(){
         val phone = "(021) 97678-8872"
         Assert.assertEquals(true, Telephone.cellPhone(phone))
@@ -45,6 +51,12 @@ class TelephoneTest {
     fun validCommercialPhone(){
         val phone = "(055) 4563-6676"
         Assert.assertEquals(true, Telephone.commercialPhone(phone))
+    }
+
+    @Test
+    fun blankCommercialPhone(){
+        val phone = ""
+        Assert.assertEquals(false, Telephone.commercialPhone(phone))
     }
 
     @Test

@@ -9,7 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/federalregistrations" />
             <option value="$PROJECT_DIR$/mail" />
+            <option value="$PROJECT_DIR$/numericalmask" />
             <option value="$PROJECT_DIR$/telephone" />
           </set>
         </option>
